@@ -40,7 +40,7 @@ export default () => {
                       <td>
                         <img
                           src={res1.product.image}
-                          art="img"
+                          alt="img"
                           style={{ height: "50px" }}
                         />
                       </td>

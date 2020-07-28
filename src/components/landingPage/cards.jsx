@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Card, Spinner } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { allProduct } from "../../redux/store/actions/allProductAction";
@@ -64,7 +64,7 @@ export default () => {
           ""
         )}
         {Product.map((res) => (
-          <Card style={{ width: "18rem", marginTop: "30px" }}>
+          <Card key={res._id} style={{ width: "18rem", marginTop: "30px" }}>
             <Card.Img
               variant="top"
               src={res.image}

@@ -18,8 +18,6 @@ export const signUp = (payload, callBackConfirmation) => {
       callBackConfirmation(response);
     } catch (error) {
       const { response } = error;
-      const { request, ...errorObject } = response;
-
       callBackConfirmation(response);
     }
   };
